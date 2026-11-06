@@ -1,0 +1,30 @@
+# Pakiety wyłączane przez `DEBLOAT=1 ./install.sh` (pm disable-user, nic nie jest odinstalowywane).
+# Sprawdzone na TCL Smart TV Pro G03_4K_GB / BeyondTV4, Google TV 11 (RP1A.200622.001 AR09):
+# po restarcie działają pilot, HDMI, sieć, Ustawienia i Sklep Play.
+# Zakomentuj (#) linię, jeśli chcesz zostawić daną aplikację.
+
+# TCL: telemetria, reklamy, promowane kanały
+com.tcl.bi
+com.tcl.overseasappshow
+com.tcl.channelplus
+com.tcl.waterfall.overseas
+com.tcl.messagebox
+com.tcl.esticker
+com.tcl.usercenter
+com.tcl.logkit
+# "TV Guard" - cleaner; zostaje uruchomiony jako proces systemowy, ale nie robi nic więcej
+com.tcl.guard
+com.tcl.ocean.instructions
+com.tcl.browser
+
+# Google: autoinstalator promowanych aplikacji i zbędne dodatki
+android.autoinstalls.config.google.gtvpai
+com.google.android.play.games
+com.google.android.feedback
+com.google.android.marvin.talkback
+
+# AOSP: aplikacje bez sensu na TV
+com.android.camera2
+com.android.messaging
+com.android.printspooler
+org.chromium.webview_shell
